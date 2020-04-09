@@ -1,14 +1,7 @@
 const button01 = document.querySelector("#button");
-    button01.addEventListener('click', function (e) {
-
-
-        //var companyName = "TAKATA";
-        let companyName = "TAKATA";
-
-        if (true) {
-            //var companyName = "JOYSON";
-            companyName = "JOYSON";
-            console.log(companyName);
-        }
-        console.log(companyName);
-    }, false);
+const paragraph01 = document.querySelector("#paragraph01");
+const paragraph02 = document.querySelector("#paragraph02");
+button01.addEventListener('click', function (e) {
+    paragraph01.classList.toggle('change');
+    paragraph02.classList.toggle('change');    
+}, false);

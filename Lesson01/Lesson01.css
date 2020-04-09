@@ -1,19 +1,54 @@
-h1 {
-color: green;
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+#mainContainer {
+    margin-left: 25px;    
 }
 
-#Headline01 {
-color: red;
+.paragraph{
+    font-size: 16px;
+    width: 50%;
 }
 
-.Klasse01 {
-color: aquamarine;
+p{
+    color: coral;
 }
 
-.Klasse02 {
-margin-left: 50px;
+#paragraph01 {
+    color: coral;
 }
 
-p {
-font-size: 20px;
+#headline {
+    color: indianred;;
 }
+
+button{
+    background-color: khaki;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 5px 10px;    
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+    color: khaki;
+    transition: background-color .7s;
+}
+
+.change{
+    width: 100%;
+    color: lightgreen;  
+
+    /* Warum wird der nicht grün? */
+}
+/* 
+Aussagen:
+-Wertung der Selectoren
+-Kasskadieren erwähnen 
+*/
+
+
+
+
+
+
