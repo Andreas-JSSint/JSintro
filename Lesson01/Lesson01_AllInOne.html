@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson01</title>
+
+    <!-- CSS -->
+    <style>
+        body {
+            background-color: lightcyan;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        .headlines {
+            border-bottom: 1px solid black;
+        }
+
+        #headline01 {
+            color: orange;
+        }
+        .hideClass{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="headline01" class="headlines">Hello JSS!</h1>
+    <p>Lorem ipsum dolor sit...
+    </p>
+    <h1 id="headline02" class="headlines">Hello again!</h1>
+    <button id="hideButton">Click Me!</button>
+
+     <!-- JS -->
+    <script>
+        
+        const hideButton = document.querySelector('#hideButton');        
+        const headline02 = document.querySelector('#headline02');
+        
+       
+        hideButton.addEventListener('click', hideFunction);
+        function hideFunction() {
+            headline02.classList.add('hideClass');
+        }
+    </script>
+</body>
+
+</html>
