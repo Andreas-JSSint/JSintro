@@ -429,7 +429,7 @@ The html file now looks like this:
     <button id="hideButton">Click Me!</button>
 
     <!-- JS -->
-    <script src="./Lesson01.js">    
+    <script src="./Lesson01.js"></script> 
 </body>
 
 </html>
