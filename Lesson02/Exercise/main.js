@@ -19,17 +19,17 @@ buttonDivide.addEventListener('click', calculation.bind(buttonDivide), true)
 function calculation() {
     switch (this.innerText) {
         case "+":
-            output.value = parseInt(inputA.value, 10) + parseInt(inputB.value, 10);
+            output.value = parseFloat(inputA.value) + parseFloat(inputB.value);
             break;
         case "-":
-            output.value = parseInt(inputA.value, 10) - parseInt(inputB.value, 10);
+            output.value = parseFloat(inputA.value) - parseFloat(inputB.value);
             break;
         case "x":
-            output.value = parseInt(inputA.value, 10) * parseInt(inputB.value, 10);
+            output.value = parseFloat(inputA.value) * parseFloat(inputB.value);
             break;
         case "/":
-            if (parseInt(inputB.value, 10) !== 0)
-                output.value = parseInt(inputA.value, 10) / parseInt(inputB.value, 10);
+            if (parseFloat(inputB.value, 10) !== 0)
+                output.value = parseFloat(inputA.value) / parseFloat(inputB.value);
             else
                 output.value = "not defined!"
             break;
