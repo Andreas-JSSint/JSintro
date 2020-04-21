@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, button{
+    margin: 8px 0;
+    border: none;
+}
+
+input{
+    padding: 8px;
+    font-weight: 700;
+}
+
+button{
+    border:none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 24px;
+    height: 24px ;
+}
+
+button:focus {
+    outline:0;
+}
+
+button:active{
+    background-color: darkred;
+}
+
+h1{
+    color: white;
+}
+
+.mainDiv{
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    background: lightseagreen;
+    border-radius: 5px 30px;
+}

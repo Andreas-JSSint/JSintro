@@ -38,7 +38,7 @@ console.log(lyric01)
 // will log "near far"
 
 var lyric01 = "wherever you are";
-console.log(lyric01, lyric02)
+console.log(lyric01)
 // will log "wherever you are"
 
 /*----------------------*/
@@ -129,17 +129,32 @@ There are different data types you can "fill" the keywords with. Basically they 
 * Primitive types (only one value)
   * String
   * Number
-  * Bool
-  * Null 
+  * Bool 
   * undefined
 * Non-Primitive types (can contain more complex data)
   * Objects
-  * Arrays
   * Functions
 
 You can check a data type of a variable with the function ```typeof()``` 
+
+#### Primitive type
 ```javascript
-    console.log( typeof("Pretty fly for a white guy!") );
-    //will log "string"   
+    const stringType = "This is a string."; //typeof() gives back -> string
+    const numberType = 0815; //typeof() gives back -> number
+    const boolType = true; //typeof() gives back -> bool
+    const undefinedType = undefined; //typeof() gives back -> undefined
 ```
 
+#### Non-Primitive type
+```javascript
+    const array_00 = [1,2,"string", true, false]; 
+    //typeof() gives back -> object
+
+    const object_00 = {first: "1", other:"two", hello: true } 
+    //typeof() gives back -> object
+
+    const fucntionType = function greeting(param01, param02) { 
+        console.log(param01,param02) 
+    }; 
+    //typeof() gives back -> function
+```
