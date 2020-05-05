@@ -164,3 +164,15 @@ addOne(y);
 //Will log "x=11 and y=10"
 console.log("x.value=" + x.value +" and y=" + y);
 ```
+Also works with arrays as reference
+
+```javascript
+function raise (number){
+       number[0]++;
+}
+const x = {value: [10]};
+raise(x.value);
+
+//Will log "[11]"
+console.log(x.value);
+```
